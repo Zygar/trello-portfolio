@@ -1,0 +1,23 @@
+{
+  "name": "trello-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zygar/trello-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zygar/trello-portfolio/issues"
+  },
+  "homepage": "https://github.com/Zygar/trello-portfolio#readme",
+  "devDependencies": {
+    "edition-node-gulp": "^1.3.4"
+  }
+}
