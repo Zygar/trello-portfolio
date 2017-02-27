@@ -25,10 +25,7 @@ To watch for changes, re-generate the front-end, and server it via a BrowserSync
 
 BrowserSync should open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Install a StarterKit
+---
 
-To install a specific StarterKit from GitHub type:
-
-    npm install [starterkit-vendor/starterkit-name]
-
-    gulp patternlab:loadstarterkit --kit=[starterkit-name]
+## Where does the magic happen? 
+Global placeholder data can be inspected in `sources/_data/data.json`. In most cases, I have defined component-specific placeholder data, which can be found in `sources/_patterns/[components|layouts]/[pattern].json`. It's not particularly well formatted or structured at this point. Nor are the HTML templates, for that matter. 
