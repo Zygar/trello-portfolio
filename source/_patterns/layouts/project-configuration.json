@@ -1,0 +1,61 @@
+{
+    "user": "zygar",
+    "id": "58ab78005867871042449d16",
+    "name": "Body of Work",
+    "desc": "",
+    "descData": null,
+    "closed": false,
+    "idOrganization": null,
+    "pinned": false,
+    "url": "https://trello.com/b/X62kPnBS/body-of-work",
+    "shortUrl": "https://trello.com/b/X62kPnBS",
+    "lists": [{
+        "id": "58ab78c487732c54e69fccf0",
+        "name": "Product Design",
+        "closed": false,
+        "idBoard": "58ab78005867871042449d16",
+        "pos": 767.98828125,
+        "subscribed": null,
+        "published": true
+    }, {
+        "id": "58ab785ad0d74f44519ec4bc",
+        "name": "Tools & Prototypes",
+        "closed": false,
+        "idBoard": "58ab78005867871042449d16",
+        "pos": 1535.9765625,
+        "subscribed": null,
+        "published": true
+    }, {
+        "id": "58acdc577574a893a8cc6166",
+        "name": "Freelance Gigs (Web)",
+        "closed": false,
+        "idBoard": "58ab78005867871042449d16",
+        "pos": 6143.90625,
+        "subscribed": null,
+        "published": true
+    }, {
+        "id": "58ab79a60c96fe8711e80aac",
+        "name": "Freelance Gigs (Branding)",
+        "closed": false,
+        "idBoard": "58ab78005867871042449d16",
+        "pos": 12287.8125,
+        "subscribed": null,
+        "published": false
+    }, {
+        "id": "58ab79b76daeeb3e0c1baf0c",
+        "name": "Old Faves",
+        "closed": false,
+        "idBoard": "58ab78005867871042449d16",
+        "pos": 18431.71875,
+        "subscribed": null,
+        "published": false
+    }, {
+        "id": "58abb046689dbdf541af89d2",
+        "name": "Writing",
+        "closed": false,
+        "idBoard": "58ab78005867871042449d16",
+        "pos": 49663.421875,
+        "subscribed": null,
+        "published": true
+    }]
+}

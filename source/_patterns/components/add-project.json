@@ -1,0 +1,22 @@
+{"boards":[
+    {
+        "title": "Age Well Eat Well",
+        "id": "123141",
+        "project": null
+    },
+    {
+        "title": "Mind Dump",
+        "id": "123141",
+        "project": null
+    },
+    {
+        "title": "Quick Inbox",
+        "id": "123141",
+        "project": null
+    },
+    {
+        "title": "Body of Work",
+        "id": "123141",
+        "project": "andy-body-of-work"
+    }
+]}
