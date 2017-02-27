@@ -8,23 +8,28 @@
         - Tidy up the source data (i mean it's gonna keep changing anyway so NBD)
         - Naming conventions, yo! 
  }}
+
+<h1>My Sites</h1>
  
-{{#projects}}
-    <div class="project">
-        <h2>
-            {{title}} <small><a href="#">Edit Project</a></small>
-        </h2>  
+ <div class="list">
+     {{#projects}}
+         <div class="project">
+             <h2>
+                 {{title}} <small><a href="#">Edit Project</a></small>
+             </h2>  
 
-        <a href="{{domain}}">{{domain}} →</a>
-        
-        <a class="trello-board" href="https://trello.com/{{board-id}}">{{board}}</a>
-    
-    </div>
-{{/projects}}
-{{^projects}}
-    You have no projects, create one?
-{{/projects}}
+             <a href="{{domain}}">{{domain}} →</a>
+             
+             <a class="trello-board" href="https://trello.com/{{board-id}}">{{board}}</a>
+         
+         </div>
+     {{/projects}}
+     {{^projects}}
+         You have no projects, create one?
+     {{/projects}}
 
-<div>
-    <a href="#">Add new project</a>
-</div>
+     <div>
+         <a href="#">Add new project</a>
+     </div>
+
+ </div>

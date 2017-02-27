@@ -4,8 +4,14 @@
 
 body {
     font-family: "Helvetica";
+    background-color: #00AECE;
 }
 
+
+h1, h2, h3 {
+    font-family: "Futura Std";
+    font-weight: 300;
+}
 .edit {
     text-decoration: none;
     
@@ -40,6 +46,7 @@ body {
     border: 1px solid #ccc;
     padding: 8px;
     margin-bottom: 8px;
+    background-color: #fff
 }
 
 .published-false .config {
@@ -49,6 +56,9 @@ body {
 .board, .project {
     border: 1px solid #ccc;
     background-color: #fafafa;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 4px;
 }
 
 .trello-board::before  {
@@ -61,4 +71,10 @@ body {
     font-size: 0.8em;
     display: inline-block;
     border: 1px solid #ccc;
+}
+
+
+.list {
+    background-color: #E2E4E6;
+    padding: 10px;
 }

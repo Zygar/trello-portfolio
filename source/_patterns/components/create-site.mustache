@@ -14,11 +14,15 @@
 <h1>Create New Site</h1>
 <h2>Your Trello Boards</h2>
 <p>Your Trellofolio will automatically stay in sync with the board to which you connect.</p>
-{{#boards}}
-    <div class="board">
-        <h3>{{title}}</h3>
-        {{#project}} 
-            <a href="{{project}}">Already a website</a>
-        {{/project}}
-    </div>
-{{/boards}}
+
+<div class="list">
+    {{#boards}}
+        <div class="board">
+            <h3>{{title}}</h3>
+            {{#project}} 
+                <a href="{{project}}">Already a website</a>
+            {{/project}}
+        </div>
+    {{/boards}}  
+
+</div>
