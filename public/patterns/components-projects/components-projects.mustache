@@ -1,0 +1,16 @@
+{{#projects}}
+<div class="project">
+  <h2>
+    {{title}} <small><a href="#">Edit Project</a></small>
+  </h2>
+
+  <a href="{{domain}}">{{domain}} →</a>
+
+  <a class="trello-board" href="https://trello.com/{{board-id}}">{{board}}</a>
+
+</div>
+{{/projects}} {{^projects}} You have no projects, create one? {{/projects}}
+
+<div>
+  <a href="#">Add new project</a>
+</div>

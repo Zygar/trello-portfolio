@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1488067317654,
+  "timestamp": 1488172366989,
   "graph": {
     "options": {
       "directed": true,
@@ -8,6 +8,40 @@
       "compound": false
     },
     "nodes": [
+      {
+        "v": "components/add-project.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "components/config.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/layouts-project-configuration/layouts-project-configuration.rendered.html",
+          "lineagePattern": "layouts-project-configuration"
+        }
+      },
+      {
+        "v": "components/nav.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/layouts-project-configuration/layouts-project-configuration.rendered.html",
+          "lineagePattern": "layouts-project-configuration"
+        }
+      },
+      {
+        "v": "components/projects.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "layouts/project-configuration.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
       {
         "v": "/Users/andy/Projects/trello-portfolio/source/_meta/_00-head.mustache",
         "value": {
@@ -21,6 +55,17 @@
         }
       }
     ],
-    "edges": []
+    "edges": [
+      {
+        "v": "layouts/project-configuration.mustache",
+        "w": "components/nav.mustache",
+        "value": {}
+      },
+      {
+        "v": "layouts/project-configuration.mustache",
+        "w": "components/config.mustache",
+        "value": {}
+      }
+    ]
   }
 }
