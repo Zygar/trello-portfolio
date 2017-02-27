@@ -1,0 +1,24 @@
+{{!     Create Site
+        ---------------
+        Allows the user to create a new website. This is a multi-step process that includes 
+        - picking a board to sync with 
+        - confrming site's name and initial domain name.
+
+        We'll keep all this in a single component and use Javascript to progressively reveal the steps.
+
+        TODO: 
+        - Add the rest of the markup—formify this. 
+        - Add some fancy JS to progressively reveal each section of the form so it's usable. (Later)
+ }}
+
+<h1>Create New Site</h1>
+<h2>Your Trello Boards</h2>
+<p>Your Trellofolio will automatically stay in sync with the board to which you connect.</p>
+{{#boards}}
+    <div class="board">
+        <h3>{{title}}</h3>
+        {{#project}} 
+            <a href="{{project}}">Already a website</a>
+        {{/project}}
+    </div>
+{{/boards}}
