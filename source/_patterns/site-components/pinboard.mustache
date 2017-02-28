@@ -1,9 +1,12 @@
 
-<div class="pinboard-card-list">
+<div class="pinboard-card-list  u-cf">
     {{#cards}}
         <div class="pinboard-card">
+            <div class="pinboard-card--preview">
+                <img src="{{trello_data.attachments.0.url}}" />
+                </div>
             <h2>{{name}}</h2>
             <div class="pinboard-card--desc">{{trello_data.desc}}</div>    
         </div>
-    {{/cards}}    
+    {{/cards}}
 </div>

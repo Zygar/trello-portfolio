@@ -5,10 +5,12 @@
 @import url('normalize.css');
 
 $font-stack:    Helvetica, sans-serif;
-$primary-color: rgb(20, 210, 193);
+$teal: rgb(20, 210, 193);
+$grey: rgba(226, 228, 230, 1);
+$shadow: 1px 1px 0 rgba(0,0,0,0.15);
 
 body {
-    background-color: $primary-color;
+    background-color: $teal;
 }
 
 /* Utilities */ 
@@ -71,7 +73,7 @@ body {
     margin-top: 0;
     font-size: 4em;
     color: #fff;
-    text-shadow: 1px 1px 0 rgba(0,0,0,0.15);
+    text-shadow: $shadow;
 }
 
 
@@ -139,14 +141,14 @@ body {
 
 
 .list {
-    background-color: #E2E4E6;
+    background-color: $grey;
     padding: 10px;
 }
 
 
 /* Pinboard Card List */
 .pinboard-card-list {
-    background-color: $primary-color;
+    // background-color: $grey;
 }
 
 /* Pinboard Card */
@@ -155,8 +157,27 @@ body {
 
 .pinboard-card {
     width: 320px;
-    margin: auto;
+    margin: 8px;
     float: left;
+    background-color: #fff;
+    box-shadow: $shadow;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 16px;
+
+    h2 {
+        margin: 0 0 16px 0;
+    }
+}
+
+.pinboard-card--preview {
+    margin-bottom: 1em;
+    img {
+        height: 180px;
+        width: 210%;
+        object-position: 50% 50%;
+        object-fit: none;
+    }
 }
 
 .pinboard-card--desc { 
