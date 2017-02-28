@@ -139,4 +139,37 @@ body {
     background-color: #E2E4E6;
     padding: 10px;
 }
--
+
+
+/* Pinboard Card List */
+.pinboard-card-list {
+    background-color: 
+}
+
+/* Pinboard Card */
+
+
+
+.pinboard-card {
+    width: 320px;
+    margin: auto;
+    float: left;
+}
+
+.pinboard-card--desc { 
+    max-height: 3.5em;
+    overflow: hidden;
+    position: relative;
+ }
+
+ .pinboard-card--desc::after {
+    content: "...";
+    background-color: #fff;
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    right:0;
+    bottom:0;
+    padding-left: 20px;
+    padding-right: 20px;
+ }
