@@ -4,8 +4,11 @@
 
 @import url('normalize.css');
 
+$font-stack:    Helvetica, sans-serif;
+$primary-color: rgb(20, 210, 193);
+
 body {
-    background-color: rgb(10, 210, 193);
+    background-color: $primary-color;
 }
 
 /* Utilities */ 
@@ -143,7 +146,7 @@ body {
 
 /* Pinboard Card List */
 .pinboard-card-list {
-    background-color: 
+    background-color: $primary-color;
 }
 
 /* Pinboard Card */

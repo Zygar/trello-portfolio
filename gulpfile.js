@@ -6,7 +6,9 @@
 var gulp = require('gulp'),
   path = require('path'),
   browserSync = require('browser-sync').create(),
-  argv = require('minimist')(process.argv.slice(2));
+  argv = require('minimist')(process.argv.slice(2)),
+  sourcemaps = require('gulp-sourcemaps'),
+  sass = require('gulp-sass');
 
 function resolvePath(pathInput) {
   return path.resolve(pathInput).replace(/\\/g,"/");
@@ -41,7 +43,11 @@ gulp.task('pl-copy:font', function(){
 
 // CSS Copy
 gulp.task('pl-copy:css', function(){
-  return gulp.src(resolvePath(paths().source.css) + '/*.css')
+  // Do SASS and sourcemapping here
+  return gulp.src(resolvePath(paths().source.css) + '/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(resolvePath(paths().public.css)))
     .pipe(browserSync.stream());
 });
@@ -154,7 +160,7 @@ function reloadCSS() {
 }
 
 function watch() {
-  gulp.watch(resolvePath(paths().source.css) + '/**/*.css', { awaitWriteFinish: true }).on('change', gulp.series('pl-copy:css', reloadCSS));
+  gulp.watch(resolvePath(paths().source.css) + '/**/*.scss', { awaitWriteFinish: true }).on('change', gulp.series('pl-copy:css', reloadCSS));
   gulp.watch(resolvePath(paths().source.styleguide) + '/**/*.*', { awaitWriteFinish: true }).on('change', gulp.series('pl-copy:styleguide', 'pl-copy:styleguide-css', reloadCSS));
 
   var patternWatches = [
