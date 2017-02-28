@@ -1,0 +1,54 @@
+/** ----------------------
+    Pinboard Template
+------------------------ **/
+
+/* 1. Collection of Cards ---------------- */
+
+
+.pinboard-card-list {
+    // background-color: $grey;
+}
+
+
+/* 2. Individual Card ---------------- */
+
+.pinboard-card {
+    width: 320px;
+    margin: 8px;
+    float: left;
+    background-color: #fff;
+    box-shadow: $shadow;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 16px;
+    h2 {
+        margin: 0 0 16px 0;
+    }
+}
+
+.pinboard-card--preview {
+    margin-bottom: 1em;
+    img {
+        height: 180px;
+        width: 210%;
+        object-position: 50% 50%;
+        object-fit: none;
+    }
+}
+
+.pinboard-card--desc { 
+    max-height: 3.5em;
+    overflow: hidden;
+    position: relative;
+    &::after {
+        content: "...";
+        background-color: #fff;
+        display: inline-block;
+        padding: 2px;
+        position: absolute;
+        right:0;
+        bottom:0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+ }

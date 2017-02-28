@@ -1,0 +1,28 @@
+/** ----------------------
+    List Sites/Projects
+------------------------ **/
+
+.list {
+    background-color: $grey;
+    padding: 10px;
+}
+
+.project {
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 4px;
+}
+
+.trello-board::before  {
+    content:"📋 Trello Board: ";
+}
+
+.trello-board {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    display: inline-block;
+    border: 1px solid #ccc;
+}

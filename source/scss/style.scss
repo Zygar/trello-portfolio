@@ -2,198 +2,24 @@
  * YOUR STYLES HERE
  */
 
-@import url('normalize.css');
+@import 'variables';
+@import 'utilities';
+@import 'normalize';
+@import 'site-components/pinboard';
+@import 'admin-components/nav';
+@import 'admin-components/configure-site';
+@import 'admin-components/create-site';
+@import 'admin-components/list-sites.scss';
 
-$font-stack:    Helvetica, sans-serif;
-$teal: rgb(20, 210, 193);
-$grey: rgba(226, 228, 230, 1);
-$shadow: 1px 1px 0 rgba(0,0,0,0.15);
 
+
+/**** Doesn't fit anywhere else yet ****/
 body {
     background-color: $teal;
 }
 
-/* Utilities */ 
 
-.u-cf:before,
-.u-cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.u-cf:after {
-    clear: both;
-}
-
-
-/* Navigate-App */
-.main-navigation {
-    background-color: rgb(60,60,60);
-    color: #fff;
-    line-height: 40px;
+.app-frame {  // contains currentpage
     padding: 20px;
 }
 
-#logo {
-    display: block;
-    float: left;
-    max-width: 240px;
-    font-size: 24px;
-    margin-right: 20px
-}
-
-.main-navigation nav {
-    float: right;
-    display: block;
-}
-
-.main-navigation a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.75em;
-    margin-left: 2.4em;
-    letter-spacing: 0.2px;
-}
-
-
-
-
-/**** LAYOUTS ****/
-.app-frame { 
-    padding: 20px;
-}
-
-/* Module - Page Header */
-.module-title {
-    padding-top: 10em;
-}
-
-.module-title h1 {
-    margin-top: 0;
-    font-size: 4em;
-    color: #fff;
-    text-shadow: $shadow;
-}
-
-
-
-.edit {
-    text-decoration: none;
-    
-    color: rgb(50,90,90);
-    border: 1px solid #ccc;
-    display: inline-block;
-    padding: 2px 4px 4px 4px;
-}
-
- .edit::before {
-    content:"📝 ";
- }
-
-.route-container {
-    font-family: "Helvetica";
-}
-
-.route {
-    font-size: 1.25em;
-}
-
-.nav-placeholder {
-    width: 100%;
-    line-height: 80px;
-    background-color: #fbf3f1;
-    text-align: center;
-    font-family: "Helvetica";
-    color: grey;
-}
-
-.collection {
-    border: 1px solid #ccc;
-    padding: 8px;
-    margin-bottom: 8px;
-    background-color: #fff
-}
-
-.published-false .config {
-    display:none;
-}
-
-.board, .project {
-    border: 1px solid #ccc;
-    background-color: #fafafa;
-    margin-bottom: 1em;
-    padding: 1em;
-    border-radius: 4px;
-}
-
-.trello-board::before  {
-    content:"📋 Trello Board: ";
-}
-
-.trello-board {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    display: inline-block;
-    border: 1px solid #ccc;
-}
-
-
-.list {
-    background-color: $grey;
-    padding: 10px;
-}
-
-
-/* Pinboard Card List */
-.pinboard-card-list {
-    // background-color: $grey;
-}
-
-/* Pinboard Card */
-
-
-
-.pinboard-card {
-    width: 320px;
-    margin: 8px;
-    float: left;
-    background-color: #fff;
-    box-shadow: $shadow;
-    border-radius: 4px;
-    overflow: hidden;
-    padding: 16px;
-
-    h2 {
-        margin: 0 0 16px 0;
-    }
-}
-
-.pinboard-card--preview {
-    margin-bottom: 1em;
-    img {
-        height: 180px;
-        width: 210%;
-        object-position: 50% 50%;
-        object-fit: none;
-    }
-}
-
-.pinboard-card--desc { 
-    max-height: 3.5em;
-    overflow: hidden;
-    position: relative;
- }
-
- .pinboard-card--desc::after {
-    content: "...";
-    background-color: #fff;
-    display: inline-block;
-    padding: 2px;
-    position: absolute;
-    right:0;
-    bottom:0;
-    padding-left: 20px;
-    padding-right: 20px;
- }

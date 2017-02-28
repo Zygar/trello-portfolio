@@ -1,0 +1,32 @@
+/** ----------------------
+    Admin Nav Bar
+------------------------ **/
+
+.main-navigation {
+    background-color: rgb(60,60,60);
+    color: #fff;
+    line-height: 40px;
+    padding: 20px;
+}
+
+#logo {
+    display: block;
+    float: left;
+    max-width: 240px;
+    font-size: 24px;
+    margin-right: 20px
+}
+
+.main-navigation nav {
+    float: right;
+    display: block;
+}
+
+.main-navigation a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    margin-left: 2.4em;
+    letter-spacing: 0.2px;
+}

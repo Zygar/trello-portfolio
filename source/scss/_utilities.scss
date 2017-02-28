@@ -1,0 +1,13 @@
+/** ----------------------
+    Utilities
+------------------------ **/
+
+.u-cf:before,
+.u-cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.u-cf:after {
+    clear: both;
+}
