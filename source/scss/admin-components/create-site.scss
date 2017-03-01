@@ -8,4 +8,31 @@
     margin-bottom: 1em;
     padding: 1em;
     border-radius: 4px;
+    position: relative;
+    h3 {
+        float:left;
+    }
+}
+
+.is-project {
+    background-color: $grey;
+}
+
+.board-picker {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.board-picker::before {
+    content:"🎲";
+    display: block;
+    text-align: center;
+    font-size: 2em;
+}
+
+.btn--square {
+    height: 100%;
+    padding: 20px;
 }

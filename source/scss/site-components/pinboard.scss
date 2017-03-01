@@ -30,9 +30,9 @@
     margin-bottom: 1em;
     img {
         height: 180px;
-        width: 210%;
+        width: 100%;
         object-position: 50% 50%;
-        object-fit: none;
+        object-fit: cover;
     }
 }
 

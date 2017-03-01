@@ -1,23 +1,24 @@
 
 <header class="module-title">
-    <h1>{{name}}</h1>
-    <p>Your domain is andy-body-of-work.trellofolio.com. <a href="#">Customise URL / Add CNAME</a> <a class="button" href="{{url}}">View on Trello →</a></p>
+    <a class="btn" href="#">↖ Return to all projects</a>
+    <h1>{{title}}</h1>
+    <p>{{slug}}.trellofolio.com</p>
+
+    <a href="#">Customise URL / Add CNAME</a> <a class="button" href="{{url}}">View on Trello →</a></p>
 </header>
 
-
-
-
-<div class="list">
+<div class="list-container">
 {{#lists}}
-    <div class="collection  published-{{published}}">
-        <div class="controls">
-            <button>{{#published}}Published ✅{{/published}}{{^published}}Hidden 🚫{{/published}}</button>
+    <div class="list-item collection  published-{{published}}">
+        <div class="col-meta  u-cf">
+            <h2>{{title}}</h2>
+            <button>Publish</button>
         </div>
-        <h2>{{name}}</h2>
+        
         <div class="config">
             <div class="route-container">
-                <a class="route" href="{{id}}">/{{url_slug}}</a>
-                <a class="edit" href="#">Change Stub</a> 
+                <a class="route" href="{{slug}}">/{{slug}}</a>
+                <a class="btn  btn--edit" href="#">Change Stub</a> 
             </div>
             <div class="templates">
                 <h3>Template</h3>
@@ -28,11 +29,11 @@
                 </select>
                 <span>Gallery: A gallery style view with expandable lightboxes. Perfect for displaying image-heavy cards.</span>
             </div>
-            <div class="fields">
+            <!--<div class="fields">
                 <h3>Fields to Render (dev only)</h3>
                 <p><small>Some of these fields will be ones that don't exist on Trello—e.g. "short-desc", which we'd have to generate ourselves. (for example, by grabbing the first three sentences from a description). In production, these fields will be associated with <strong>templates</strong> instead of <strong>collections (lists)</strong>. </small></p>
                 <input type="checkbox" id="example-{{id}}"><label for="example-{{id}}">Example</label>
-            </div>
+            </div>-->
         </div>
     </div>
 {{/lists}}

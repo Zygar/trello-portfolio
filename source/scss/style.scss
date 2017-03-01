@@ -5,6 +5,7 @@
 @import 'variables';
 @import 'utilities';
 @import 'normalize';
+@import 'globals';
 @import 'site-components/pinboard';
 @import 'admin-components/nav';
 @import 'admin-components/configure-site';
@@ -16,6 +17,7 @@
 /**** Doesn't fit anywhere else yet ****/
 body {
     background-color: $teal;
+    padding: 20px; 
 }
 
 

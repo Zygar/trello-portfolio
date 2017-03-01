@@ -11,18 +11,25 @@
         - Add some fancy JS to progressively reveal each section of the form so it's usable. (Later)
  }}
 
-<h1>Create New Site</h1>
-<h2>Your Trello Boards</h2>
-<p>Your Trellofolio will automatically stay in sync with the board to which you connect.</p>
+<header class="module-title">
+    <a class="btn" href="#">↖ Return to your projects</a>
+    <h1>Create New Site</h1>
+    <p>Your Trellofolio will automatically stay in sync with the board to which you connect.</p>
+</header>
 
-<div class="list">
+<section class="list-container">
+    <header>
+        <h2>Available Trello Boards</h2>
+    </header>
+   
     {{#boards}}
-        <div class="board">
+        <div class="list-item  u-cf  board {{#project}}is-project{{/project}}">
             <h3>{{title}}</h3>
-            {{#project}} 
-                <a href="{{project}}">Already a website</a>
+            {{^project}} 
+                <a href="#" class="btn  btn--square  board-picker">Pick Board</a>
+
             {{/project}}
         </div>
     {{/boards}}  
 
-</div>
+</section>
